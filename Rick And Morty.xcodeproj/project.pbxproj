@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		791BB29C2964CA8A00BA7017 /* RMGetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BB29B2964CA8A00BA7017 /* RMGetAllCharactersResponse.swift */; };
+		791BB29E2964DA7500BA7017 /* CharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BB29D2964DA7500BA7017 /* CharacterListViewViewModel.swift */; };
+		791BB2A02964DB6200BA7017 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BB29F2964DB6200BA7017 /* CharacterListView.swift */; };
+		791BB2A22964E3F300BA7017 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791BB2A12964E3F300BA7017 /* Extensions.swift */; };
 		7939271A29634D1000E02B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939271929634D1000E02B2F /* AppDelegate.swift */; };
 		7939271C29634D1000E02B2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939271B29634D1000E02B2F /* SceneDelegate.swift */; };
 		7939271E29634D1000E02B2F /* RMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939271D29634D1000E02B2F /* RMTabBarController.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		791BB29B2964CA8A00BA7017 /* RMGetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllCharactersResponse.swift; sourceTree = "<group>"; };
+		791BB29D2964DA7500BA7017 /* CharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewViewModel.swift; sourceTree = "<group>"; };
+		791BB29F2964DB6200BA7017 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		791BB2A12964E3F300BA7017 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7939271629634D1000E02B2F /* Rick And Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick And Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7939271929634D1000E02B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7939271B29634D1000E02B2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 		7939272F29634FCB00E02B2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				791BB29F2964DB6200BA7017 /* CharacterListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 		7939273029634FD500E02B2F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				791BB29D2964DA7500BA7017 /* CharacterListViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				7939272429634D1100E02B2F /* LaunchScreen.storyboard */,
 				7939271929634D1000E02B2F /* AppDelegate.swift */,
 				7939271B29634D1000E02B2F /* SceneDelegate.swift */,
+				791BB2A12964E3F300BA7017 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 			files = (
 				7939274A29636CE700E02B2F /* RMOrigin.swift in Sources */,
 				7939274C29636E0800E02B2F /* RMSingleLocation.swift in Sources */,
+				791BB2A02964DB6200BA7017 /* CharacterListView.swift in Sources */,
 				791BB29C2964CA8A00BA7017 /* RMGetAllCharactersResponse.swift in Sources */,
 				7939274E29636FBB00E02B2F /* RMCharacterStatus.swift in Sources */,
 				793927502963700F00E02B2F /* RMCharacterGender.swift in Sources */,
@@ -271,11 +281,13 @@
 				7939271A29634D1000E02B2F /* AppDelegate.swift in Sources */,
 				7939271C29634D1000E02B2F /* SceneDelegate.swift in Sources */,
 				793927422963528A00E02B2F /* RMSettingsViewController.swift in Sources */,
+				791BB2A22964E3F300BA7017 /* Extensions.swift in Sources */,
 				79392744296361F500E02B2F /* RMService.swift in Sources */,
 				79392735296350DE00E02B2F /* RMLocation.swift in Sources */,
 				79392748296362E700E02B2F /* RMEndpoint.swift in Sources */,
 				793927372963510300E02B2F /* RMCharacter.swift in Sources */,
 				793927462963622500E02B2F /* RMRequest.swift in Sources */,
+				791BB29E2964DA7500BA7017 /* CharacterListViewViewModel.swift in Sources */,
 				7939273C2963521F00E02B2F /* RMCharacterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
