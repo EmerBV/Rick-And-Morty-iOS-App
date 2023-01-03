@@ -16,6 +16,7 @@ final class RMCharacterViewController: UIViewController {
         title =  "Characters"
         
         // Para comprobar en consola que la respuesta del API funciona
+        // Para printar un único personaje
         /*
         let request = RMRequest(
             endpoint: .character,
@@ -27,7 +28,28 @@ final class RMCharacterViewController: UIViewController {
         )
         
         print(request.url)
+        
+        RMService.shared.execute(request, expecting: RMCharacter.self) { result in
+            switch result {
+            case .success:
+                break
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
          */
+        
+        RMService.shared.execute(.listCharactersRequests, expecting: RMGetAllCharactersResponse.self) { result in
+            switch result {
+            case .success(let model):
+                //print(String(describing: model))
+                print("Total: "+String(model.info.count))
+                print("Total info pages: "+String(model.info.pages))
+                print("Page result count: "+String(model.results.count))
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
     }
 
 }
