@@ -72,7 +72,6 @@ final class RMCharacterListViewViewModel: NSObject {
         guard !isLoadingMoreCharacters else {
             return
         }
-        print("Fetching more data")
         
         isLoadingMoreCharacters = true
         print("Fetching more characters")
@@ -106,13 +105,13 @@ final class RMCharacterListViewViewModel: NSObject {
                     return IndexPath(row: $0, section: 0)
                 })
                 //print(indexPathsToAdd)
-                
                 strongSelf.characters.append(contentsOf: moreResults)
                 //print("Post-update: \(strongSelf.cellViewModels.count)")
                 //print(String(strongSelf.characters.count))
+                
                 DispatchQueue.main.async {
                     strongSelf.delegate?.didLoadMoreCharacters(with: indexPathsToAdd)
-                    //strongSelf.isLoadingMoreCharacters = false
+                    strongSelf.isLoadingMoreCharacters = false
                 }
             case .failure(let failure):
                 print(String(describing: failure))
